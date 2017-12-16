@@ -6,5 +6,10 @@ class IndexController extends Controller {
         $this->display('index');
     }
 
+    function show()
+    {
+    	$this->display('show');
+    }
+
    
 }
