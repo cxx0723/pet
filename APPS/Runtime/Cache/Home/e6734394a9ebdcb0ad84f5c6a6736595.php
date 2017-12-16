@@ -1,6 +1,6 @@
-<?php if (!defined('THINK_PATH')) exit();?><link rel="stylesheet" href="/pet/Public/css/style.css">
+<?php if (!defined('THINK_PATH')) exit();?><link rel="stylesheet" href="/D1/Three/pet/Public/css/style.css">
 		<!-- responsive style sheet -->
-<link rel="stylesheet" href="/pet/Public/css/responsive.css">
+<link rel="stylesheet" href="/D1/Three/pet/Public/css/responsive.css">
 <div class="main-page-wrapper">
 <section class="header-section">
 				<div class="top-header">
@@ -20,7 +20,7 @@
 					   			<div class="search-box tran5s" id="searchWrapper">
 					   				<button id="close-button" class="p-color"><i class="fa fa-times" aria-hidden="true"></i></button>
 					   				<div class="container">
-					   					<img src="/pet/Public/images/them-logo/them-main-logo-1.png" alt="Logo">
+					   					<img src="/D1/Three/pet/Public/images/them-logo/them-main-logo-1.png" alt="Logo">
 					   					<form action="#">
 					   						<input type="text" placeholder="Search....">
 					   						<button class="p-bg-color"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -28,7 +28,7 @@
 					   				</div>
 					   			</div> <!-- /.search-box -->
 					   		</div> <!-- /.right-content -->
-					   		<div class="them-logo float-left"><a href="#"><img src="/pet/Public/images/them-logo/them-main-logo-1.jpg" alt="logo"></a></div>
+					   		<div class="them-logo float-left"><a href="#"><img src="/D1/Three/pet/Public/images/them-logo/them-main-logo-1.jpg" alt="logo"></a></div>
 
 							<!-- Menu -->
 							<nav class="navbar">
@@ -78,7 +78,7 @@
 										</div>
 									</div>
 								</div>
-								<img src="/pet/Public/images/about/dog-1.png" alt="">
+								<img src="/D1/Three/pet/Public/images/about/dog-1.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -137,7 +137,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-1.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-1.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">A1 Cat</a></h5>
@@ -154,7 +154,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-2.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-2.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Bolod Dog</a></h5>
@@ -171,7 +171,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-3.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-3.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Spice Dog</a></h5>
@@ -188,7 +188,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-4.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-4.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Baby Cat</a></h5>
@@ -205,7 +205,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-5.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-5.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Baby Dog</a></h5>
@@ -222,7 +222,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-6.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-6.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Big Home Dog</a></h5>
@@ -239,7 +239,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-7.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-7.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Pepper</a></h5>
@@ -256,7 +256,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-8.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-8.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Grape</a></h5>
@@ -273,7 +273,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-9.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-9.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Group dog pakage</a></h5>
@@ -290,7 +290,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-10.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-10.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Crab, (1kg )</a></h5>
@@ -307,7 +307,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-11.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-11.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Black cat</a></h5>
@@ -324,7 +324,7 @@
 											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-12.png" alt="image">
+											<img src="/D1/Three/pet/Public/images/shop/img-12.png" alt="image">
 										</div>
 										<div class="price-and-taitle">
 											<h5><a href="shop-details.html">Green Frog</a></h5>
@@ -348,7 +348,7 @@
 				<div class="container">
 					<div class="top-footer row">
 						<div class="col-md-5 col-sm-7 col-xs-12 footer-logo">
-							<a href="#"><img src="/pet/Public/images/them-logo/them-main-logo-2.jpg" alt="Logo"></a>
+							<a href="#"><img src="/D1/Three/pet/Public/images/them-logo/them-main-logo-2.jpg" alt="Logo"></a>
 							<p><span class="p-color">myPet</span> was established in 2017 by Pet business veterans, Rod Davies and Matthew Levington, the journey began when founders Matthew Levington and Rod Davies, met up in 2017 over a beer</p>
 							<ul class="icon">
 								<li><a href="" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -405,26 +405,26 @@
 
 			</footer>
 			
-        <script src="/pet/Public/vendor/jquery-2.2.3.min.js"></script>
+        <script src="/D1/Three/pet/Public/vendor/jquery-2.2.3.min.js"></script>
 		<!-- bootstrap-select.min.js -->
-		<script src="/pet/Public/vendor/bootstrap-select-1.10.0/dist/js/bootstrap-select.min.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/bootstrap-select-1.10.0/dist/js/bootstrap-select.min.js"></script>
 		<!-- bootstrap js -->
-		<script src="/pet/Public/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/bootstrap/js/bootstrap.min.js"></script>
 		<!-- camera js -->
-		<script src="/pet/Public/vendor/Camera-master/scripts/camera.min.js"></script>
-		<script src="/pet/Public/vendor/Camera-master/scripts/jquery.easing.1.3.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/Camera-master/scripts/camera.min.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/Camera-master/scripts/jquery.easing.1.3.js"></script>
 		<!-- Owl carousel -->
-		<script src="/pet/Public/vendor/OwlCarousel2/dist/owl.carousel.min.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/OwlCarousel2/dist/owl.carousel.min.js"></script>
 		<!-- appear & countTo -->
-		<script src="/pet/Public/vendor/jquery.appear.js"></script>
-		<script src="/pet/Public/vendor/jquery.countTo.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/jquery.appear.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/jquery.countTo.js"></script>
 		<!-- fancybox -->
-		<script src="/pet/Public/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
 		<!-- Gallery - isotop -->
-		<script type="text/javascript" src="/pet/Public/vendor/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="/D1/Three/pet/Public/vendor/isotope.pkgd.min.js"></script>
 		<!-- WOW js -->
-		<script type="text/javascript" src="/pet/Public/vendor/WOW-master/dist/wow.min.js"></script>
+		<script type="text/javascript" src="/D1/Three/pet/Public/vendor/WOW-master/dist/wow.min.js"></script>
 		<!-- Circle Progress -->
-		<script type="text/javascript" src="/pet/Public/vendor/circle-progress.js"></script>
+		<script type="text/javascript" src="/D1/Three/pet/Public/vendor/circle-progress.js"></script>
 		<!-- Style js -->
-		<script src="/pet/Public/js/custom.js"></script>
+		<script src="/D1/Three/pet/Public/js/custom.js"></script>

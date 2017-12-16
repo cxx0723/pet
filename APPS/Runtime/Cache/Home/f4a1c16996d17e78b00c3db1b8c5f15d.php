@@ -1,6 +1,6 @@
-<?php if (!defined('THINK_PATH')) exit();?><link rel="stylesheet" href="/pet/Public/css/style.css">
+<?php if (!defined('THINK_PATH')) exit();?><link rel="stylesheet" href="/D1/Three/pet/Public/css/style.css">
 		<!-- responsive style sheet -->
-<link rel="stylesheet" href="/pet/Public/css/responsive.css">
+<link rel="stylesheet" href="/D1/Three/pet/Public/css/responsive.css">
 <div class="main-page-wrapper">
 <section class="header-section">
 				<div class="top-header">
@@ -20,7 +20,7 @@
 					   			<div class="search-box tran5s" id="searchWrapper">
 					   				<button id="close-button" class="p-color"><i class="fa fa-times" aria-hidden="true"></i></button>
 					   				<div class="container">
-					   					<img src="/pet/Public/images/them-logo/them-main-logo-1.png" alt="Logo">
+					   					<img src="/D1/Three/pet/Public/images/them-logo/them-main-logo-1.png" alt="Logo">
 					   					<form action="#">
 					   						<input type="text" placeholder="Search....">
 					   						<button class="p-bg-color"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -28,7 +28,7 @@
 					   				</div>
 					   			</div> <!-- /.search-box -->
 					   		</div> <!-- /.right-content -->
-					   		<div class="them-logo float-left"><a href="#"><img src="/pet/Public/images/them-logo/them-main-logo-1.jpg" alt="logo"></a></div>
+					   		<div class="them-logo float-left"><a href="#"><img src="/D1/Three/pet/Public/images/them-logo/them-main-logo-1.jpg" alt="logo"></a></div>
 
 							<!-- Menu -->
 							<nav class="navbar">
@@ -63,7 +63,7 @@
 <title>宠物家</title>
 <section>
 				<div id="theme-main-banner">
-					<div data-src="/pet/Public/images/home/banner-slider-1.jpg">
+					<div data-src="/D1/Three/pet/Public/images/home/banner-slider-1.jpg">
 						<div class="camera_caption">
 							<div class="container text-center">
 							    <h1 class="wow fadeInUp animated" data-wow-delay="0.2s">Love your Pet, Care Pet</h1>
@@ -74,7 +74,7 @@
 							</div> <!-- /.container -->
 						</div> <!-- /.camera_caption -->
 					</div>
-					<div data-src="/pet/Public/images/home/banner-slider-1.jpg">
+					<div data-src="/D1/Three/pet/Public/images/home/banner-slider-1.jpg">
 						<div class="camera_caption">
 							<div class="container text-center">
 								<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">Love your Pet, Care Pet</h1>
@@ -85,7 +85,7 @@
 							</div> <!-- /.container -->
 						</div> <!-- /.camera_caption -->
 					</div>
-					<div data-src="/pet/Public/images/home/banner-slider-1.jpg">
+					<div data-src="/D1/Three/pet/Public/images/home/banner-slider-1.jpg">
 						<div class="camera_caption">
 							<div class="container text-center">
 								<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">Love your Pet, Care Pet</h1>
@@ -149,7 +149,7 @@
 						</div>
 						<div class="col-md-6 col-xs-12">
 							<div class="we-are-my-pet-img">
-								<img src="/pet/Public/images/home/img-1.jpg" alt="image">
+								<img src="/D1/Three/pet/Public/images/home/img-1.jpg" alt="image">
 								<div></div>
 							</div>
 						</div>
@@ -170,7 +170,7 @@
 						<div class="col-md-4 col-xs-6 our-pet-services-item-width">
 							<div class="our-pet-services-item">
 								<div class="our-pet-services-img">
-									<img src="/pet/Public/images/home/img-2.jpg" alt="image">
+									<img src="/D1/Three/pet/Public/images/home/img-2.jpg" alt="image">
 								</div>
 								<div class="our-pet-services-text">
 									<h5><a href="#">PET ADOPTION</a></h5>
@@ -181,7 +181,7 @@
 						<div class="col-md-4 col-xs-6 our-pet-services-item-width">
 							<div class="our-pet-services-item">
 								<div class="our-pet-services-img">
-									<img src="/pet/Public/images/home/img-3.jpg" alt="image">
+									<img src="/D1/Three/pet/Public/images/home/img-3.jpg" alt="image">
 								</div>
 								<div class="our-pet-services-text">
 									<h5><a href="#">PET GROOMING</a></h5>
@@ -192,7 +192,7 @@
 						<div class="col-md-4 col-xs-6 our-pet-services-item-width">
 							<div class="our-pet-services-item">
 								<div class="our-pet-services-img">
-									<img src="/pet/Public/images/home/img-4.jpg" alt="image">
+									<img src="/D1/Three/pet/Public/images/home/img-4.jpg" alt="image">
 								</div>
 								<div class="our-pet-services-text">
 									<h5><a href="#">Pet Health care</a></h5>
@@ -203,7 +203,7 @@
 						<div class="col-md-4 col-xs-6 our-pet-services-item-width">
 							<div class="our-pet-services-item">
 								<div class="our-pet-services-img">
-									<img src="/pet/Public/images/home/img-5.jpg" alt="image">
+									<img src="/D1/Three/pet/Public/images/home/img-5.jpg" alt="image">
 								</div>
 								<div class="our-pet-services-text">
 									<h5><a href="#">DOG WALKING</a></h5>
@@ -214,7 +214,7 @@
 						<div class="col-md-4 col-xs-6 our-pet-services-item-width">
 							<div class="our-pet-services-item">
 								<div class="our-pet-services-img">
-									<img src="/pet/Public/images/home/img-6.jpg" alt="image">
+									<img src="/D1/Three/pet/Public/images/home/img-6.jpg" alt="image">
 								</div>
 								<div class="our-pet-services-text">
 									<h5><a href="#">PET DAYCARE</a></h5>
@@ -225,7 +225,7 @@
 						<div class="col-md-4 col-xs-6 our-pet-services-item-width">
 							<div class="our-pet-services-item">
 								<div class="our-pet-services-img">
-									<img src="/pet/Public/images/home/img-7.jpg" alt="image">
+									<img src="/D1/Three/pet/Public/images/home/img-7.jpg" alt="image">
 								</div>
 								<div class="our-pet-services-text">
 									<h5><a href="#">Nice Product</a></h5>
@@ -239,7 +239,7 @@
 
 			<!-- Company History _________________________________ -->
 			<section class="company-history-section">
-				<div class="company-history-shape-img-top"><img src="/pet/Public/images/shape-1.png" alt="shape-img"></div>
+				<div class="company-history-shape-img-top"><img src="/D1/Three/pet/Public/images/shape-1.png" alt="shape-img"></div>
 				<div class="company-history-containt-opact">
 					<div class="container">
 						<div class="row">
@@ -384,7 +384,7 @@
 							<div id="client-review-slider" class="owl-carousel owl-theme">
 								<div class="item">
 									<div class="clearfix">
-										<img src="/pet/Public/images/home/img-8.jpg" alt="" class="float-left">
+										<img src="/D1/Three/pet/Public/images/home/img-8.jpg" alt="" class="float-left">
 										<div class="name float-left">
 											<h6>Mahfuz Riad</h6>
 											<p>CEO, Company</p>
@@ -396,7 +396,7 @@
 								</div> <!-- /.item -->
 								<div class="item">
 									<div class="clearfix">
-										<img src="/pet/Public/images/home/img-9.jpg" alt="" class="float-left">
+										<img src="/D1/Three/pet/Public/images/home/img-9.jpg" alt="" class="float-left">
 										<div class="name float-left">
 											<h6>Abdur Rob</h6>
 											<p>CEO, Developer</p>
@@ -408,7 +408,7 @@
 								</div> <!-- /.item -->
 								<div class="item">
 									<div class="clearfix">
-										<img src="/pet/Public/images/home/img-8.jpg" alt="" class="float-left">
+										<img src="/D1/Three/pet/Public/images/home/img-8.jpg" alt="" class="float-left">
 										<div class="name float-left">
 											<h6>Mahfuz Riad</h6>
 											<p>CEO, Company</p>
@@ -436,7 +436,7 @@
 						<div class="row">
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="single-blog">
-									<div class="image"><img src="/pet/Public/images/home/img-10.jpg" alt=""></div>
+									<div class="image"><img src="/D1/Three/pet/Public/images/home/img-10.jpg" alt=""></div>
 									<div class="text tran3s">
 										<h5><a href="#">Dogs Having The Summer Ever</a></h5>
 										<p>Summer is a time of vacations and travel or simply relaxing at home for a staycation As much as we would love for our dogs to accompany</p>
@@ -446,7 +446,7 @@
 							</div> <!-- /.item -->
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="single-blog">
-									<div class="image"><img src="/pet/Public/images/home/img-11.jpg" alt=""></div>
+									<div class="image"><img src="/D1/Three/pet/Public/images/home/img-11.jpg" alt=""></div>
 									<div class="text tran3s">
 										<h5><a href="#">The cat feeling sad , when she was alone</a></h5>
 										<p>Summer is a time of vacations and travel or simply relaxing at home for a staycation As much as we would love for our dogs to accompany</p>
@@ -456,7 +456,7 @@
 							</div> <!-- /.item -->
 							<div class="col-md-4 col-sm-6 col-xs-12">
 								<div class="single-blog">
-									<div class="image"><img src="/pet/Public/images/home/img-12.jpg" alt=""></div>
+									<div class="image"><img src="/D1/Three/pet/Public/images/home/img-12.jpg" alt=""></div>
 									<div class="text tran3s">
 										<h5><a href="#">Cat Having nice moment the winter</a></h5>
 										<p>Summer is a time of vacations and travel or simply relaxing at home for a staycation As much as we would love for our dogs to accompany</p>
@@ -474,11 +474,11 @@
 				<div class="container">
 					<div class="">
 						<div id="partner-logo" class="owl-carousel owl-theme">
-							<div class="item"><div><img src="/pet/Public/images/home/slide-logo-1.png" alt="logo"></div></div>
-							<div class="item"><div><img src="/pet/Public/images/home/slide-logo-2.png" alt="logo"></div></div>
-							<div class="item"><div><img src="/pet/Public/images/home/slide-logo-3.png" alt="logo"></div></div>
-							<div class="item"><div><img src="/pet/Public/images/home/slide-logo-4.png" alt="logo"></div></div>
-							<div class="item"><div><img src="/pet/Public/images/home/slide-logo-2.png" alt="logo"></div></div>
+							<div class="item"><div><img src="/D1/Three/pet/Public/images/home/slide-logo-1.png" alt="logo"></div></div>
+							<div class="item"><div><img src="/D1/Three/pet/Public/images/home/slide-logo-2.png" alt="logo"></div></div>
+							<div class="item"><div><img src="/D1/Three/pet/Public/images/home/slide-logo-3.png" alt="logo"></div></div>
+							<div class="item"><div><img src="/D1/Three/pet/Public/images/home/slide-logo-4.png" alt="logo"></div></div>
+							<div class="item"><div><img src="/D1/Three/pet/Public/images/home/slide-logo-2.png" alt="logo"></div></div>
 						</div> <!-- End .partner_logo -->
 					</div>
 				</div>
@@ -488,7 +488,7 @@
 				<div class="container">
 					<div class="top-footer row">
 						<div class="col-md-5 col-sm-7 col-xs-12 footer-logo">
-							<a href="#"><img src="/pet/Public/images/them-logo/them-main-logo-2.jpg" alt="Logo"></a>
+							<a href="#"><img src="/D1/Three/pet/Public/images/them-logo/them-main-logo-2.jpg" alt="Logo"></a>
 							<p><span class="p-color">myPet</span> was established in 2017 by Pet business veterans, Rod Davies and Matthew Levington, the journey began when founders Matthew Levington and Rod Davies, met up in 2017 over a beer</p>
 							<ul class="icon">
 								<li><a href="" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -545,26 +545,26 @@
 
 			</footer>
 			
-        <script src="/pet/Public/vendor/jquery-2.2.3.min.js"></script>
+        <script src="/D1/Three/pet/Public/vendor/jquery-2.2.3.min.js"></script>
 		<!-- bootstrap-select.min.js -->
-		<script src="/pet/Public/vendor/bootstrap-select-1.10.0/dist/js/bootstrap-select.min.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/bootstrap-select-1.10.0/dist/js/bootstrap-select.min.js"></script>
 		<!-- bootstrap js -->
-		<script src="/pet/Public/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/bootstrap/js/bootstrap.min.js"></script>
 		<!-- camera js -->
-		<script src="/pet/Public/vendor/Camera-master/scripts/camera.min.js"></script>
-		<script src="/pet/Public/vendor/Camera-master/scripts/jquery.easing.1.3.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/Camera-master/scripts/camera.min.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/Camera-master/scripts/jquery.easing.1.3.js"></script>
 		<!-- Owl carousel -->
-		<script src="/pet/Public/vendor/OwlCarousel2/dist/owl.carousel.min.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/OwlCarousel2/dist/owl.carousel.min.js"></script>
 		<!-- appear & countTo -->
-		<script src="/pet/Public/vendor/jquery.appear.js"></script>
-		<script src="/pet/Public/vendor/jquery.countTo.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/jquery.appear.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/jquery.countTo.js"></script>
 		<!-- fancybox -->
-		<script src="/pet/Public/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+		<script src="/D1/Three/pet/Public/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
 		<!-- Gallery - isotop -->
-		<script type="text/javascript" src="/pet/Public/vendor/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="/D1/Three/pet/Public/vendor/isotope.pkgd.min.js"></script>
 		<!-- WOW js -->
-		<script type="text/javascript" src="/pet/Public/vendor/WOW-master/dist/wow.min.js"></script>
+		<script type="text/javascript" src="/D1/Three/pet/Public/vendor/WOW-master/dist/wow.min.js"></script>
 		<!-- Circle Progress -->
-		<script type="text/javascript" src="/pet/Public/vendor/circle-progress.js"></script>
+		<script type="text/javascript" src="/D1/Three/pet/Public/vendor/circle-progress.js"></script>
 		<!-- Style js -->
-		<script src="/pet/Public/js/custom.js"></script>
+		<script src="/D1/Three/pet/Public/js/custom.js"></script>

@@ -1,0 +1,20 @@
+[ 2017-12-16T08:00:24+08:00 ] 127.0.0.1 /D1/Three/pet/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021889s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.024595s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.024653s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010615s ]
+

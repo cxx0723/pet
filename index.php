@@ -1,4 +1,4 @@
-<?
+<?php
    header("content-type:text/html;charset=utf8");
    //定义应用目录
    define('APP_PATH', './APPS/');
