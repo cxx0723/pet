@@ -51,6 +51,16 @@
 										<li><a href="<?php echo U('Team/index');?>">团队</a></li>
 										<li><a href="<?php echo U('Shop/index');?>">商店</a></li>
 										<li><a href="<?php echo U('Shoper/index');?>">商家</a></li>
+                                        
+                                        <?php if(empty(Cookie('uname'))): ?><li><a href="<?php echo U('Login/index');?>">登录</a></li>
+                                        <?php else: ?><li><a href="<?php echo U('Cart/index');?>">购物车</a></li> 
+                                          <font color="red"><?=Cookie('uname')?></font>
+                                          <a href="<?php echo U('Login/out');?>">退出</a><?php endif; ?>
+
+										
+
+
+										
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</nav>
@@ -68,13 +78,13 @@
 								<div class="row">
 									<div class="col-sm-8 col-xs-12">
 										<div class="">
-											<h1>About Us</h1>
-											<p>Pet lovers rely on Becky’s Pet Care for professional dog walking and pet sitting.</p>
+											<h1>关于我们</h1>
+											<p>我们专业的团队是宠物爱好者们可依赖的宠物护理.</p>
 										</div>
 									</div>
 									<div class="col-sm-4 col-xs-12">
 										<div class="">
-											<a href="#" class="hvr-float-shadow">Get A Quote</a>
+											<a href="#" class="hvr-float-shadow">询价</a>
 										</div>
 									</div>
 								</div>
@@ -96,40 +106,7 @@
 				</div>
 			</section>
  
-			<!-- banner-bottom-section ____________________________ -->
-			<section class="banner-bottom-section">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-4 col-xs-12">
-							<div class="banner-bottom-item">
-								<div class="banner-bottom-contante text-center">
-									<i class="flaticon-egyptian-cat"></i>
-									<h6><a href="#">Healthy Pet Care</a></h6>
-									<p>We have over 15 years of experience</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4 col-xs-12">
-							<div class="banner-bottom-item">
-								<div class="banner-bottom-contante text-center">
-									<i class="flaticon-dog-training"></i>
-									<h6><a href="#">Request for Services</a></h6>
-									<p>Quality Pet Service</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4 col-xs-12">
-							<div class="banner-bottom-item">
-								<div class="banner-bottom-contante text-center">
-									<i class="flaticon-pawprint"></i>
-									<h6><a href="#">$40 Off Purchase</a></h6>
-									<p>$100 off OR Special Financing!</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			
 
 			<!-- We are myPet ____________________________ -->
 			<section class="we-are-my-pet-section">
@@ -138,41 +115,17 @@
 						<div class="col-md-6 col-xs-12">
 							<div class="we-are-my-pet-text">
 								<span></span>
-								<h2>We are <span>my<span>Pet</span></span></h2>
-								<p>Welcome! We are glad you would like to explore a different type of pet care for your furry friends. We have been providing top-notch pet sitting and pet care in the Littleton community since 1995 and the Best Choice as an alternative to pet boarding</p>
-								<p>There are many advantages of your pet staying in their own home. Some of them are; no exposure to illnesses such as kennel cough, canine flu, & parasites. Whether it’s a spa day, play date, sleepover, training class or veterinary care, we provide the best in pet services with highly trained, devoted associates. Services are conveniently located inside most of our PetSmart stores.</p>
+								<h2>我们是<span>宠物<span>之家</span></span></h2>
+								<p>欢迎！我们很高兴您想为您的毛茸茸的朋友探索一种不同类型的宠物护理。自1995年以来，我们一直在利特尔顿社区提供一流的宠物照顾和宠物照顾，并且作为宠物寄宿的替代选择
+
+                                  你的宠物住在自己的家里有很多好处。他们之中有一些是; 没有接触到犬舍咳嗽，犬流感和寄生虫等疾病。.</p>
+								<a href="#" class="hvr-float-shadow">了解更多</a>
 							</div>
 						</div>
 						<div class="col-md-6 col-xs-12">
 							<div class="we-are-my-pet-img">
 								<img src="/pet/Public/images/home/img-1.jpg" alt="image">
 								<div></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="about-us-we-are-my-pet">
-						<h4>About Us</h4>
-						<div class="row">
-							<div class="col-md-5 col-xs-12">
-								<div class="about-us-dog-years">
-									<p>For 20 years, we’ve been treating your pets like our family.</p>
-									<span>(That’s 140 in dog years.)</span>
-									<div><img src="/pet/Public/images/about/cat-dog-2.png" alt=""></div>
-								</div>
-							</div>
-							<div class="col-md-7 col-xs-12">
-								<div class="about-us-tex">
-									<p>Best Friends Pet Care is the leader of the pack when it comes to the absolute best care for your cat or dog. With 52 centers and hospitals in 20 states, including Walt Disney World, our state-of-the-art facilities provide your pet with a safe, clean and fun environment that will remind your fido or feline of home.</p>
-									<p>Whether your pet needs a scratch around the ear, a face to lick or a place to play, your best friend will be taken care of as if our own. So pets, want a treat? Come. Sit. Stay a while. We think you’ll see why it’s “Best to stay with Friends.”</p>
-									<p>Our flagship center opened to national acclaim in 1996, setting a new standard in pet care. We offer an extensive menu of activities and services – from fitness sessions to bedtime stories – so you can design the perfect vacation for your pet.</p>
-								</div>
-							</div>
-						</div>
-						<div class="about-us-we-are-mypet-video">
-							<img src="/pet/Public/images/about/img-1.jpg" alt="image">
-							<div>
-								<a data-fancybox href="https://www.youtube.com" class="tran3s"><i class="flaticon-play-button"></i></a>					
 							</div>
 						</div>
 					</div>
@@ -190,7 +143,7 @@
 									<div class="history-item item-one">
 										<div>
 											<i class="flaticon-handshake"></i>
-											<p>Happy Customers</p>
+											<p>用户成交量</p>
 											<h2><span class="timer" data-from="0" data-to="210" data-speed="2000" data-refresh-interval="5">0</span></h2>
 										</div>
 									</div>
@@ -201,7 +154,7 @@
 									<div class="history-item item-two">
 										<div>
 											<i class="flaticon-satisfaction"></i>
-											<p>Customer Satisfaction</p>
+											<p>客户满意度</p>
 											<h2><span class="timer" data-from="0" data-to="100" data-speed="2000" data-refresh-interval="5">0</span>%</h2>
 										</div>
 									</div>
@@ -212,7 +165,7 @@
 									<div class="history-item item-three">
 										<div>
 											<i class="flaticon-construction"></i>
-											<p>Pet Hosted</p>
+											<p>宠物托管</p>
 											<h2><span class="timer" data-from="0" data-to="95" data-speed="2000" data-refresh-interval="5">0</span></h2>
 										</div>
 									</div>
@@ -223,7 +176,7 @@
 									<div class="history-item item-four">
 										<div>
 											<i class="flaticon-medal"></i>
-											<p>Awards Winning</p>
+											<p>获奖</p>
 											<h2><span class="timer" data-from="0" data-to="234" data-speed="2000" data-refresh-interval="5">0</span></h2>
 										</div>
 									</div>
@@ -240,19 +193,19 @@
 					<div class="row">
 						<div class="col-md-6 col-xs-12">
 							<div class="our-work-process">
-								<h4>Our pet health care System</h4>
-								<p>The doctors and staff at Pet Care Veterinary Hospital have years of experience treating a variety of reptiles including Bearded Dragons, Geckos, Snakes and Tortoises. Our hospital offers physical exams, vaccinations, nutrition, behavioral and environmental enrichment information for your pet ferret.</p>
+								<h4>我们的宠物医疗保健系统</h4>
+								<p>宠物护理兽医院的医生和工作人员具有多年的治疗各种爬行动物的经验，包括胡子龙，壁虎，蛇和龟。我们的医院为您的宠物雪貂提供身体检查，疫苗接种，营养，行为和环境丰富信息</p>
 								<div class="row">
 									<div class="col-xs-6">
 										<div class="">
 											<i class="flaticon-dog-training"></i>
-											<h6><a href="#">Home Delivery</a></h6>
+											<h6><a href="#">送货上门</a></h6>
 										</div>
 									</div>
 									<div class="col-xs-6">
 										<div class="">
 											<i class="flaticon-snowshoe-cat"></i>
-											<h6><a href="#">QUALITY Pet</a></h6>
+											<h6><a href="#">宠物品质</a></h6>
 										</div>
 									</div>
 								</div>
@@ -260,8 +213,8 @@
 						</div>
 						<div class="col-md-6 col-xs-12">
 							<div class="doing-the-right-thing">
-								<h5>Doing the right thing, Discover Our Products</h5>
-								<p>Our veterinarians and staff understand the importance of the special bond you share with your pet and are dedicated to providing the best that modern veterinary care has to offer</p>
+								<h5>做正确的事情，发现我们的产品</h5>
+								<p>我们的兽医和工作人员了解您与宠物分享的特殊纽带的重要性，致力于为现代兽医护理提供最好的服务</p>
 								<div class="inspiration-tab">
 									<div class="inspiration-panel">
 										<div class="panel-group theme-accordion" id="accordion">
@@ -269,12 +222,12 @@
 										    <div class="panel-heading active-panel">
 										      <h6 class="panel-title">
 										        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-										        Trusted Pet Sitters Across the Country</a>
+										        全国值得信赖的宠物保姆</a>
 										      </h6>
 										    </div>
 										    <div id="collapse1" class="panel-collapse collapse in">
 										      <div class="panel-body">
-										      	<p>The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals,</p>
+										      	<p>创新与创意的完美结合，我们的浴室瓷砖符合国际标准。高质量的20mm厚的瓷砖，可以放置在基座上,</p>
 										      </div>
 										    </div>
 										  </div> <!-- /panel 1 -->
@@ -282,12 +235,14 @@
 										    <div class="panel-heading">
 										      <h6 class="panel-title">
 										        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-										        What can I offer my bird as a treat?</a>
+										        
+
+我能给我的鸟什么作为款待？ </a>
 										      </h6>
 										    </div>
 										    <div id="collapse2" class="panel-collapse collapse">
 										      <div class="panel-body">
-										      	<p>The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals,</p>
+										      	<p>创新与创意的完美结合，我们的浴室瓷砖符合国际标准。高质量的20mm厚的瓷砖，可以放置在基座上,</p>
 										      </div>
 										    </div>
 										  </div> <!-- /panel 2 -->
@@ -295,12 +250,12 @@
 										    <div class="panel-heading">
 										      <h6 class="panel-title">
 										        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-										        When Your Rabbit Stops Eating</a>
+										        当你的兔子停止饮食</a>
 										      </h6>
 										    </div>
 										    <div id="collapse3" class="panel-collapse collapse">
 										      <div class="panel-body">
-										      	<p>The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals,</p>
+										      	<p>创新与创意的完美结合，我们的浴室瓷砖符合国际标准。高质量的20mm厚的瓷砖，可以放置在基座上,</p>
 										      </div>
 										    </div>
 										  </div> <!-- /panel 3 -->
@@ -314,12 +269,12 @@
 			</section>
 
 			<!-- Client Review ____________________________ -->
-			<div class="client-slider about-us-client-slider">
+			<div class="client-slider">
 				<div class="opacity">
 					<div class="container">
 						<div class="them-title text-center">
 							<span></span>
-							<h2>Client Review</h2>
+							<h2>客户评论</h2>
 						</div> <!-- /.theme-title -->
 
 						<div class="testimonial-slider">
@@ -365,6 +320,8 @@
 					</div> <!-- /.container -->
 				</div> <!-- /.opacity -->
 			</div> <!-- /.client-slider -->
+
+			 <!-- /.our-blog -->
 
 			<!-- Partner Logo ____________________________ -->
 	        <div class="partners-section">

@@ -51,6 +51,16 @@
 										<li><a href="<?php echo U('Team/index');?>">团队</a></li>
 										<li><a href="<?php echo U('Shop/index');?>">商店</a></li>
 										<li><a href="<?php echo U('Shoper/index');?>">商家</a></li>
+                                        
+                                        <?php if(empty(Cookie('uname'))): ?><li><a href="<?php echo U('Login/index');?>">登录</a></li>
+                                        <?php else: ?><li><a href="<?php echo U('Cart/index');?>">购物车</a></li> 
+                                          <font color="red"><?=Cookie('uname')?></font>
+                                          <a href="<?php echo U('Login/out');?>">退出</a><?php endif; ?>
+
+										
+
+
+										
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</nav>

@@ -51,6 +51,16 @@
 										<li><a href="<?php echo U('Team/index');?>">团队</a></li>
 										<li><a href="<?php echo U('Shop/index');?>">商店</a></li>
 										<li><a href="<?php echo U('Shoper/index');?>">商家</a></li>
+                                        
+                                        <?php if(empty(Cookie('uname'))): ?><li><a href="<?php echo U('Login/index');?>">登录</a></li>
+                                        <?php else: ?><li><a href="<?php echo U('Cart/index');?>">购物车</a></li> 
+                                          <font color="red"><?=Cookie('uname')?></font>
+                                          <a href="<?php echo U('Login/out');?>">退出</a><?php endif; ?>
+
+										
+
+
+										
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</nav>
@@ -60,6 +70,9 @@
 </section>
 
 
+<style type="text/css">
+
+</style>
 <section class="">
 				<div class="them-inner-banner">
 					<div class="inner-banner-opact">
@@ -68,13 +81,13 @@
 								<div class="row">
 									<div class="col-sm-8 col-xs-12">
 										<div class="">
-											<h1>Shop</h1>
-											<p>Pet lovers rely on Becky’s Pet Care for professional dog walking and pet sitting.</p>
+											<h1>商店</h1>
+											<p>宠物爱好者依赖贝基的宠物照顾，专业遛狗和宠物坐。.</p>
 										</div>
 									</div>
 									<div class="col-sm-4 col-xs-12">
 										<div class="">
-											<a href="#" class="hvr-float-shadow">Get A Quote</a>
+											<a href="#" class="hvr-float-shadow">询价</a>
 										</div>
 									</div>
 								</div>
@@ -86,11 +99,11 @@
 				<div class="inner-banner-bottom">
 					<div class="container">
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">主页</a></li>
 							<li><span>-</span></li>
 							<li><a href="index.html">Page</a></li>
 							<li><span>-</span></li>
-							<li><a href="#">Shop</a></li>
+							<li><a href="#">商店</a></li>
 						</ul>
 					</div>
 				</div>
@@ -111,238 +124,97 @@
 							</div>
 							<div class="col-lg-6  col-sm-4  col-xs-12">
 								<div class="text-center">
-									<p>Showing 1 - 12 of 12 Result</p>
+									<p>显示12个结果中的1 - 12</p>
 								</div>
 							</div>
 							<div class="col-lg-3 col-sm-4  col-xs-12">
 								<ul class="select-section">
 									<li>
 										<select class="selectpicker">
-											<option>Defult Shorting</option>
-											<option>By Price</option>
-											<option>By Category</option>
-											<option>By Date</option>
+											<option>默认</option>
+											<option>按价格</option>
+											<option>按类别</option>
+											<option>按日期</option>
 										</select>
 									</li>
 								</ul> <!-- /.top-select-section -->
 							</div>
 						</div>
-
+                     
 						<div class="row">
-							<div class="col-md-4 col-xs-6 product-item-width">
+							<?php if(is_array($goods)): $i = 0; $__LIST__ = $goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><div class="col-md-4 col-xs-6 product-item-width" gid="<?php echo ($v["id"]); ?>" id="parent">
 								<div class="shop-item-product-wrapper">
 									<div class="shop-item-product">
 										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
+                                       <?php if($v['coll']==1): else: ?><a href="javascript::" id="collect" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a><?php endif; ?>
+  
+											<a href="javascript::" id="cart" class="float-right"><i class="flaticon-shopping-bag"></i></a>
 										</div>
 										<div class="product">
-											<img src="/pet/Public/images/shop/img-1.png" alt="image">
+											<img src="/pet/uploads/<?php echo ($v["img"]); ?>" alt="image">
 										</div>
 										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">A1 Cat</a></h5>
-											<span>$18</span>
+											<h5><a href="<?php echo U('Cart/detail',['gid'=>$v['id']]);?>"><?php echo ($v["name"]); ?></a></h5>
+											<span>$<?php echo ($v["price"]); ?></span>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-2.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Bolod Dog</a></h5>
-											<span>$17</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-3.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Spice Dog</a></h5>
-											<span>$27</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-4.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Baby Cat</a></h5>
-											<span>$48</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-5.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Baby Dog</a></h5>
-											<span>$13</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-6.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Big Home Dog</a></h5>
-											<span>$37</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-7.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Pepper</a></h5>
-											<span>$37</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-8.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Grape</a></h5>
-											<span>$27</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-9.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Group dog pakage</a></h5>
-											<span>$79</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-10.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Crab, (1kg )</a></h5>
-											<span>$14</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-11.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Black cat</a></h5>
-											<span>$21</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-xs-6 product-item-width">
-								<div class="shop-item-product-wrapper">
-									<div class="shop-item-product">
-										<div class="clear-fix">
-											<a href="#" class="float-left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-											<a href="#" class="float-right"><i class="flaticon-shopping-bag"></i></a>
-										</div>
-										<div class="product">
-											<img src="/pet/Public/images/shop/img-12.png" alt="image">
-										</div>
-										<div class="price-and-taitle">
-											<h5><a href="shop-details.html">Green Frog</a></h5>
-											<span>$49</span>
-										</div>
-									</div>
-								</div>
-							</div>
+							</div><?php endforeach; endif; else: echo "" ;endif; ?>
 						</div>
 						<ul class="shop-page-prev-next-button text-center">
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+							
+						<?=$page?>
+						 
 						</ul>
 					</div>	<!-- / .shop-item-wrapper -->
 				</div>
 			</section>
+<script type="text/javascript" src="/pet/Public/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	//添加购物车
+	$(document).on('click','#cart',function(){
+		 var gid=$(this).parents('#parent').attr('gid');
+		 $.ajax({
+		 	 type : "post",
+		 	 url  : "/pet/index.php/Home/shop/add_cart",
+		 	 data : 'gid='+gid,
+		 	 success:function(e){
+		 	 	if(e == 1)
+		 	 	{
+
+		 	 		alert('请先登录');
+		 	 		
+		 	 		window.location.href="/pet/index.php/admin/Login/index"
+		 	 	}else{
+		 	 		alert('添加购物车成功')
+		 	 	}
+		 	 	
+		 	 }
+		 })
+	})
+    
+    //收藏
+	$(document).on('click','#coll',function(){
+		 var gid=$(this).parents('#parent').attr('gid');
+		 $.ajax({
+		 	 type : "post",
+		 	 url  : "/pet/index.php/Home/shop/add_collect",
+		 	 data : 'gid='+gid,
+		 	 success:function(e){
+		 	 	if(e == 1)
+		 	 	{
+
+		 	 		alert('请先登录');
+		 	 		
+		 	 		window.location.href="/pet/index.php/admin/Login/index"
+		 	 	}else{
+		 	 		alert('收藏成功')
+		 	 	}
+		 	 }
+		 })
+		 $(this).remove()
+	})
+</script>
 </div>
 <footer>
 				<div class="container">

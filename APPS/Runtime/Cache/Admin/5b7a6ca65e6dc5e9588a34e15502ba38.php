@@ -1,0 +1,513 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+<link rel="icon" type="image/png" href="/pet/Public/assets/i/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/pet/Public/assets/i/app-icon72x72@2x.png">
+<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+<link rel="stylesheet" href="/pet/Public/assets/css/amazeui.min.css"/>
+<link rel="stylesheet" href="/pet/Public/assets/css/admin.css">
+<script src="/pet/Public/assets/js/jquery.min.js"></script>
+<script src="/pet/Public/assets/js/app.js"></script>
+</head>
+<body>
+</head>
+<body>
+<header class="am-topbar admin-header">
+  <div class="am-topbar-brand"><img src="/pet/Public/assets/i/logo.png"></div>
+  <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+    <ul class="am-nav am-nav-pills am-topbar-nav admin-header-list">
+   <li class="am-dropdown tognzhi" data-am-dropdown>
+  <button class="am-btn am-btn-primary am-dropdown-toggle am-btn-xs am-radius am-icon-bell-o" data-am-dropdown-toggle> 消息管理<span class="am-badge am-badge-danger am-round">6</span></button>
+  <ul class="am-dropdown-content">
+    <li class="am-dropdown-header">所有消息都在这里</li>
+    <li><a href="#">未激活会员 <span class="am-badge am-badge-danger am-round">556</span></a></li>
+    <li><a href="#">未激活代理 <span class="am-badge am-badge-danger am-round">69</span></a></a></li>
+    <li><a href="#">未处理汇款</a></li>
+    <li><a href="#">未发放提现</a></li>
+    <li><a href="#">未发货订单</a></li>
+    <li><a href="#">低库存产品</a></li>
+    <li><a href="#">信息反馈</a></li>
+  </ul>
+</li>
+ <li class="kuanjie">
+ 	<a href="<?php echo U('member/list');?>">用户管理</a>        
+ 	<a href="#">奖金管理</a> 
+ 	<a href="<?php echo U('Order/list');?>">订单管理</a>   
+ 	<a href="<?php echo U('Shop/list');?>">产品管理</a> 
+ 	
+ 	 <a href="<?php echo U('system/set');?>">系统设置</a>
+   <a href="<?php echo U('Login/out');?>">退出</a>
+ </li>
+ <li class="soso">
+<p>   
+	<select data-am-selected="{btnWidth: 70, btnSize: 'sm', btnStyle: 'default'}">
+          <option value="b">全部</option>
+          <option value="o">产品</option>
+          <option value="o">会员</option>
+        </select>
+</p>
+<p class="ycfg"><input type="text" class="am-form-field am-input-sm" placeholder="圆角表单域" /></p>
+<p><button class="am-btn am-btn-xs am-btn-default am-xiao"><i class="am-icon-search"></i></button></p>
+ </li>
+      <li class="am-hide-sm-only" style="float: right;"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+    </ul>
+  </div>
+</header>
+<div class=" admin-content">
+    <div class="daohang">
+      <ul>
+        <li>
+        <button type="button" class="am-btn am-btn-default am-radius am-btn-xs">
+        首页
+        </li>
+        <li>
+        <button type="button" class="am-btn am-btn-default am-radius am-btn-xs">
+        帮助中心<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a>
+        </button>
+        </li>
+        <li>
+          <button type="button" class="am-btn am-btn-default am-radius am-btn-xs">
+          奖金管理<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="am-btn am-btn-default am-radius am-btn-xs">
+          产品管理<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="am-popup am-popup-inner" id="my-popup">
+      <div class="am-popup-hd">
+        <h4 class="am-popup-title">添加分类</h4>
+        <span data-am-modal-close
+            class="am-close">&times;</span> </div>
+      <div class="am-popup-bd">
+        <form class="am-form tjlanmu" method="post" enctype="multipart/form-data">
+          <div class="am-form-group">
+            <div class="zuo">分类名称：</div>
+            <div class="you">
+              <input type="text" name="tname" class="am-input-sm" id="tname" placeholder="请输入标题">
+            </div>
+          </div>
+          <div class="am-form-group">
+            <div class="zuo">上级分类：</div>
+            <div class="you">
+              <select name="pid">
+                  <option value="0">顶级分类</option>
+                   <?php if(is_array($types)): foreach($types as $key=>$vo): ?><option value="<?php echo ($vo["tid"]); ?>">├<?php echo str_repeat('─',$vo['level']) ?> <?php echo ($vo["tname"]); ?></option><?php endforeach; endif; ?>
+              </select>
+            </div>
+          </div>
+          <div class="am-form-group am-cf">
+            <div class="zuo">分类描述：</div>
+            <div class="you">
+              <textarea class="" name="describe" rows="2" id="doc-ta-1"></textarea>
+            </div>
+          </div>
+          <div class="am-form-group am-cf">
+            <div class="zuo">栏目图片：</div>
+            <div class="you" style="height: 45px;">
+              <input type="file" id="doc-ipt-file-1" name="img">
+              <p class="am-form-help">请选择要上传的文件...</p>
+            </div>
+          </div>
+          
+          <div class="am-form-group am-cf">
+            <div class="zuo">状态：</div>
+            <div class="you" style="margin-top: 3px;">
+              <label class="am-checkbox-inline">
+                <input type="radio" name="status" value="1">
+                显示 </label>
+              <label class="am-checkbox-inline">
+                <input type="radio" name="status" value="2">
+                隐藏 </label>
+            </div>
+          </div>
+          <div class="am-form-group am-cf">
+            <div class="you">
+              <p>
+                <button type="submit" id="bt" class="am-btn am-btn-success am-radius">提交</button>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    
+        <div class="am-popup am-popup-inner" id="my-popups">
+        <div class="am-popup-hd">
+          <h4 class="am-popup-title">修改栏目名称</h4>
+          <span data-am-modal-close class="am-close">&times;</span> </div>
+        <div class="am-popup-bd">
+          <form class="am-form tjlanmu" action="" method="post" enctype="multipart/form-data">
+            <div class="am-form-group">
+              <div class="zuo">分类名称：</div>
+              <div class="you">
+
+                <input type="hidden" name="ss" value="1">
+                <input type="hidden" name="tid" id="tid" value="">
+                <input type="text" name="tname" class="am-input-sm" id="save_name" placeholder="请输入标题">
+                
+              </div>
+            </div>
+            <div class="am-form-group">
+              <div class="zuo">上级分类：</div>
+              <div class="you">
+                <input type="hidden" name="pid" id="save_pid0">
+                <input type="text" class="am-input-sm" id="save_pid1">
+               
+              </div>
+            </div>
+            <div class="am-form-group am-cf">
+              <div class="zuo">栏目描述：</div>
+              <div class="you">
+                <textarea class="" name="describe" rows="2" id="save_desc"></textarea>
+              </div>
+            </div>
+         
+            
+            <div class="am-form-group am-cf">
+              <div class="zuo">状态：</div>
+              <div class="you" style="margin-top: 3px;" id="save_status">
+               
+              </div>
+            </div>
+            <div class="am-form-group am-cf">
+              <div class="you">
+                <p>
+                  <button type="submit" id="sbt" class="am-btn am-btn-success am-radius">提交</button>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    <div class="am-popup am-popup-inner" id="my-popupss">
+        <div class="am-popup-hd">
+          <h4 class="am-popup-title">复制栏目</h4>
+          <span data-am-modal-close class="am-close">&times;</span> </div>
+        <div class="am-popup-bd">
+          <form class="am-form tjlanmu">
+          
+          
+          <div class="am-form-group">
+              <div class="zuo">复制到：</div>
+              <div class="you">
+              
+  <select data-am-selected="{btnWidth: 200, btnSize: 'sm', btnStyle: 'danger'}">
+  <option value="a">Apple</option>
+  <option value="b">Banana</option>
+  <option value="o">Orange</option>
+  <option value="m">Mango</option>
+</select>
+ 顶级栏目选默认
+
+              </div>
+            </div>
+          
+          
+            <div class="am-form-group">
+              <div class="zuo">新栏目名称：</div>
+              <div class="you">
+                <input type="email" class="am-input-sm" id="doc-ipt-email-1" placeholder="请输入标题">
+              </div>
+            </div>
+            <div class="am-form-group">
+              <div class="zuo">栏目关键词：</div>
+              <div class="you">
+                <input type="password" class="am-input-sm" id="doc-ipt-pwd-1" placeholder="请输入关键词">
+              </div>
+            </div>
+            <div class="am-form-group am-cf">
+              <div class="zuo">栏目描述：</div>
+              <div class="you">
+                <textarea class="" rows="2" id="doc-ta-1"></textarea>
+              </div>
+            </div>
+            <div class="am-form-group am-cf">
+              <div class="zuo">栏目图片：</div>
+              <div class="you" style="height: 45px;">
+                <input type="file" id="doc-ipt-file-1">
+                <p class="am-form-help">请选择要上传的文件...</p>
+              </div>
+            </div>
+            <div class="am-form-group am-cf">
+              <div class="zuo">简介：</div>
+              <div class="you">
+                <textarea class="" rows="2" id="doc-ta-1"></textarea>
+              </div>
+            </div>
+            <div class="am-form-group am-cf">
+              <div class="zuo">状态：</div>
+              <div class="you" style="margin-top: 3px;">
+                <label class="am-checkbox-inline">
+                  <input type="checkbox" value="option1">
+                  显示 </label>
+                <label class="am-checkbox-inline">
+                  <input type="checkbox" value="option2">
+                  隐藏 </label>
+              </div>
+            </div>
+            <div class="am-form-group am-cf">
+              <div class="you">
+                <p>
+                  <button type="submit" class="am-btn am-btn-success am-radius">提交</button>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    <div class="admin-biaogelist">
+      <div class="listbiaoti am-cf">
+        <ul class="am-icon-flag on">
+          商品栏目管理
+        </ul>
+        <dl class="am-icon-home" style="float: right;">
+          当前位置： 首页 >商品分类 <a href="#">商品列表</a>
+        </dl>
+        <dl>
+          <button type="button" class="am-btn am-btn-danger am-round am-btn-xs am-icon-plus" data-am-modal="{target: '#my-popup'}">添加分类</button>
+        </dl>
+        <!--data-am-modal="{target: '#my-popup'}" 弹出层 ID  弹出层 190行 开始  271行结束--> 
+        
+      </div>
+      <form class="am-form am-g">
+        <table width="100%" class="am-table am-table-bordered am-table-radius am-table-striped am-table-hover">
+          <thead>
+            <tr class="am-success">
+              <th class="table-check"><input type="checkbox" /></th>
+            
+              <th class="table-id am-text-center">ID</th>
+              <th class="table-title">栏目名称</th>
+              <th class="table-type">数据量</th>
+              <th class="table-author am-hide-sm-only">访问</th>
+              <th class="table-date am-hide-sm-only">添加子栏目</th>
+              <th width="163px" class="table-set">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <?php if(is_array($types)): $i = 0; $__LIST__ = $types;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr tid="<?php echo ($vo["tid"]); ?>">
+              <td><input type="checkbox" /></td>
+           
+              <td class="am-text-center"><?php echo ($vo["tid"]); ?></td>
+              <td><a href="#">
+
+                ├<?php echo str_repeat('─',$vo['level']); echo ($vo["tname"]); ?></a></td>
+              <td><?php echo ($vo["tnum"]); ?></td>
+              <td class="am-hide-sm-only">
+                  <?php if($vo["status"] == 1): ?><i class="am-icon-check am-text-warning"></i>
+                    
+                    <?php else: ?> 
+                     <i class="am-icon-close am-text-primary"></i><?php endif; ?>
+              </td>
+              <td class="am-hide-sm-only"><?php echo date('Y-m-d H:i:s',$vo['time']);?></td>
+              <td><div class="am-btn-toolbar">
+                  <div class="am-btn-group am-btn-group-xs">
+                  <a class="am-btn am-btn-default am-btn-xs am-text-success am-round am-icon-file" data-am-modal="{target: '#my-popups'}" title="添加子栏目"></a>
+                    <span id="save" class="am-btn am-btn-default am-btn-xs am-text-secondary am-round" data-am-modal="{target: '#my-popups'}" title="修改"><span class="am-icon-pencil-square-o" ></span></span>
+                    <!-- 用按钮的时候 弹层 后缀需要加 问好 ？#的 时候才有效 真恶心 .html?# -->
+                    
+                    
+                    <button class="am-btn am-btn-default am-btn-xs am-text-warning  am-round"  title="复制" data-am-modal="{target: '#my-popupss'}" ><span class="am-icon-copy"></span></button>
+                    <!-- 做完发现 复制栏目没什么用处 早晚都要修改 -->
+                    
+                    
+                    <span id="del" class="am-btn am-btn-default am-btn-xs am-text-danger am-round"  title="删除"><span class="am-icon-trash-o"></span></span>
+                  </div>
+                </div></td>
+            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+            
+            
+                       
+          </tbody>
+        </table>
+        <div class="am-btn-group am-btn-group-xs">
+          <button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span> 删除</button>
+          <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 上架</button>
+          <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 下架</button>
+          <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 移动</button>
+          <button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span> 新增</button>
+          <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 保存</button>
+          <button type="button" class="am-btn am-btn-default"><span class="am-icon-archive"></span> 移动</button>
+          <button type="button" class="am-btn am-btn-default"><span class="am-icon-trash-o"></span> 删除</button>
+        </div>
+        <ul class="am-pagination am-fr">
+          <li class="am-disabled"><a href="#">«</a></li>
+          <li class="am-active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">»</a></li>
+        </ul>
+        <hr />
+        <p>
+        备注：操作图标含义
+         <a class="am-text-success am-icon-file" title="添加子栏目"> 添加子栏目</a> 
+         <a class="am-icon-pencil-square-o am-text-secondary" href="javascript::" title="修改"> 修改栏目</a> 
+         <a class="am-icon-copy am-text-warning" title="复制"> 复制栏目</a> 
+         <a class="am-icon-trash-o am-text-danger" title="删除"> 删除栏目</a>
+         
+        
+        </p>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="/pet/Public/assets/js/amazeui.min.js"></script>
+<script type="text/javascript">
+  flag = 1;
+  $("#tname").blur(function(){
+     var name = $(this).val();
+     if(name == ""){
+       alert('请输入标题');
+       flag = 1;
+     }else{
+       flag =0;
+     }
+  })
+    $(document).on('click','#bt',function(){
+         //return false;
+        $("#tname").trigger('blur');
+
+        if(flag == 1){
+          return false;
+        }else{
+          return true;
+        }
+        $(".am-close").trigger('click');
+    })
+
+   $(document).on('click','#save',function(){
+      var tid = $(this).parents('tr').attr('tid');
+      $("#tid").val(tid)
+      $.ajax({
+          type:"post",
+          url:"/pet/index.php/Admin/Shop/type",
+          data:"tid="+tid,
+          dataType:"json",
+          success: function(e){
+            $('#save_name').val(e.tname)
+            $('#save_pid0').val(e.pid)
+            $('#save_desc').val(e.describe);
+            $('#save_pid1').attr('placeholder',e.pname.tname);
+            if(e.status==1)
+            {
+              $("#save_status").html('<label class="am-checkbox-inline"><input type="radio" value="1" name="status" checked="checked">显示</label><label class="am-checkbox-inline"><input name="status" type="radio" value="2">隐藏</label>');
+            }else{
+               $("#save_status").html('<label class="am-checkbox-inline"><input type="radio" name="status" value="1" >显示</label><label class="am-checkbox-inline"><input name="status" type="radio" checked="checked" value="2">隐藏</label>');
+            }
+
+            
+         }
+
+      })
+      
+   })
+
+   $(document).on('click','#del',function(){
+      var _this=$(this);
+      var tid = $(this).parents('tr').attr('tid');
+      $.ajax({
+        type:"post",
+        data:"tid="+tid,
+        url:"/pet/index.php/Admin/Shop/del",
+        success:function(e){
+           alert("删除成功");
+           _this.parents('tr').remove();
+        }
+      })
+   })
+
+   
+   $(document).on('click','#bt',function(){
+
+      window.location.reload();
+   })
+</script>
+
+</body>
+</html>
+<div class="am-cf admin-main">
+<div class="nav-navicon admin-main admin-sidebar">
+    <div class="sideMenu am-icon-dashboard" style="color:#aeb2b7; margin: 10px 0 0 0;"> 欢迎系统管理员：雪山飞狐</div>
+    <div class="sideMenu">
+      <h3 class="am-icon-flag"><em></em> <a href="#">商品管理</a></h3>
+      <ul>
+        <li><a href="<?php echo U('Shop/index');?>">商品列表</a></li>
+        <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'><a href="<?php echo U('Shop/add');?>" class="tran3s">添加新商品</a></li>
+        <li><a href="<?php echo U('Shop/type');?>" class="tran3s">商品分类</a></li>
+        <li><a href="<?php echo U('Shop/review');?>" class="tran3s">用户评论</a></li>
+        <li><a href="<?php echo U('Shop/recycle');?>" class="tran3s">商品回收站</a></li>
+        <li><a href="<?php echo U('Shop/repertory');?>" class="tran3s">库存管理 </a></li>
+      </ul>
+      <h3 class="am-icon-cart-plus"><em></em> <a href="#"> 订单管理</a></h3>
+      <ul>
+        <li><a href="<?php echo U('Order/list');?>" class="tran3s">订单列表</a></li>
+        <li><a href="#" class="tran3s">合并订单</a></li>
+        <li>订单打印</li>
+        <li>添加订单</li>
+        <li>发货单列表</li>
+        <li>换货单列表</li>
+      </ul>
+      <h3 class="am-icon-users"><em></em> <a href="">用户管理</a></h3>
+      <ul>
+        <li><a href="<?php echo U('member/list');?>" class="tran3s">用户列表</a> </li>
+        <li>未激活用户</li>
+        <li>团队系谱图</li>
+        <li>用户推荐图</li>
+        <li>推荐列表</li>
+      </ul>
+      <h3 class="am-icon-volume-up"><em></em> <a href="<?php echo U('message/news');?>">信息通知</a></h3>
+      <ul>
+        <li>站内消息 /留言 </li>
+        <li>短信</li>
+        <li>邮件</li>
+        <li>微信</li>
+        <li>客服</li>
+      </ul>
+      <h3 class="am-icon-gears"><em></em> <a href="<?php echo U('system/set');?>">系统设置</a></h3>
+      <ul>
+        <li>数据备份</li>
+        <li>邮件/短信管理</li>
+        <li>上传/下载</li>
+        <li>权限</li>
+        <li>网站设置</li>
+        <li>第三方支付</li>
+        <li>提现 /转账 出入账汇率</li>
+        <li>平台设置</li>
+        <li>声音文件</li>
+      </ul>
+    </div>
+    <!-- sideMenu End --> 
+    <script type="text/javascript">
+			jQuery(".sideMenu").slide({
+				titCell:"h3", //鼠标触发对象
+				targetCell:"ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
+				effect:"slideDown", //targetCell下拉效果
+				delayTime:300 , //效果时间
+				triggerTime:150, //鼠标延迟触发时间（默认150）
+				defaultPlay:true,//默认是否执行效果（默认true）
+				returnDefault:true //鼠标从.sideMen移走后返回默认状态（默认false）
+				});
+		</script> 
+
+    
+</div>

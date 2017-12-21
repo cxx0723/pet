@@ -1,0 +1,1646 @@
+[ 2017-12-20T10:45:23+08:00 ] ::1 /pet/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001892s ]
+
+[ 2017-12-20T10:55:36+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001356s ]
+
+[ 2017-12-20T10:55:41+08:00 ] ::1 /pet/index.php/Admin/Shop/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2017-12-20T10:55:49+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2017-12-20T10:58:07+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0063s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('苏格兰折耳猫','4','苏格兰折耳猫有两个类型：折耳和立耳(普通耳)。折耳是由于不完整的显性基因突变造成的。 苏格兰折耳猫非常能吃苦耐劳，继承了祖先看仓库猫的特点。它的外表与其温柔的性格非常吻合，叫声很轻，很少大声讲话。它乐意与人为伴，并用它特有的这种安宁的方式来表达。','1','Uploads/img/2017-12-20/1513738687.png','1513738687','0') [ RunTime:0.0011s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002744s ]
+
+[ 2017-12-20T10:59:20+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0059s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('波斯猫','4','波斯猫(Persian) 猫中贵族，性情温文尔雅，聪明敏捷，善解人意，少动好静，叫声尖细柔美，爱撒娇，举止风度翩翩，天生一副娇生惯养之态，给人一种华丽高贵的感觉。历来深受世界各地爱猫人士的宠爱，是长毛猫的代表。波斯猫体格健壮、有力，躯体线条简洁流畅;圆脸、扁鼻、腿粗短，耳小、眼大、尾短圆。波斯猫的背毛长而密，质地如棉，轻如丝;毛色艳丽，光彩华贵，变化多样','1','Uploads/img/2017-12-20/1513738760.png','1513738760','0') [ RunTime:0.0009s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2017-12-20T11:00:00+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0077s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('布偶猫','4','布偶猫又称布拉多尔猫，是猫中体型和体重最大的一种猫。头呈V形，眼大而圆，被毛丰厚，四肢粗大，尾长，身体柔软，多为三色或双色猫。布偶猫性格温顺和好静，对人非常友善，忍耐性强，常被误认为缺乏疼痛感。布偶猫由于能容忍孩子的抓弄，最适宜有孩子的家庭饲养。','1','Uploads/img/2017-12-20/1513738800.png','1513738800','0') [ RunTime:0.0009s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001633s ]
+
+[ 2017-12-20T11:01:01+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0091s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('暹罗猫','4','暹罗猫，英文名称：Siamese。暹罗猫又称西母猫、泰国猫，是世界著名的短毛猫，也是短毛猫的代表品种。种族历史暹罗猫原产于泰国(故名暹罗)，在 200多年前，这种珍贵的猫仅在泰国的土宫和大寺院中饲养，是足不出户的贵族。','1','Uploads/img/2017-12-20/1513738861.jpg','1513738861','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001390s ]
+
+[ 2017-12-20T11:01:10+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2017-12-20T11:03:26+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001502s ]
+
+[ 2017-12-20T11:03:30+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002477s ]
+
+[ 2017-12-20T11:03:33+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001465s ]
+
+[ 2017-12-20T11:06:14+08:00 ] ::1 /pet/index.php/Admin/Shop/type
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002966s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `type` WHERE ( tid = 2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `tname` FROM `type` WHERE ( tid = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-12-20T11:11:12+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001431s ]
+
+[ 2017-12-20T11:13:52+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001389s ]
+
+[ 2017-12-20T11:14:11+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001579s ]
+
+[ 2017-12-20T11:14:15+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001323s ]
+
+[ 2017-12-20T11:14:43+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001516s ]
+
+[ 2017-12-20T11:14:47+08:00 ] ::1 /pet/index.php/Admin/Shop/del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001403s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0075s ]
+SQL: DELETE FROM `type` WHERE `tid` = 2 [ RunTime:0.0341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2017-12-20T11:22:43+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0065s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('八哥犬','1','巴哥犬（pug），原产于中国，富有魅力而且高雅，14世纪末正式命名为“巴哥”其词意古语为“锤头”、“小丑”，狮子鼻或小猴子的意思。巴哥犬容易有睫毛倒插的毛病，头部皱折多，也容易泪管阻塞，而有两条明显的泪痕。','1','Uploads/img/2017-12-20/1513740163.jpg','1513740163','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2017-12-20T11:26:53+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0075s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('阿拉斯加','1','雪橇犬的一种。属于大型犬。我家养的就是这种狗。这种狗狗最大的特性：玻璃胃，容易拉肚子。自律性较差，成年后显得高贵。','1','Uploads/img/2017-12-20/1513740413.jpg','1513740413','0') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002315s ]
+
+[ 2017-12-20T11:29:04+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0063s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('哈士奇','1','西伯利亚雪橇犬（俄语：Сибирский хаски，英语：Siberian husky），常见别名哈士奇，昵称为二哈。西伯利亚雪橇犬体重介于雄犬20-27公斤，雌犬16-23公斤，身高大约雄犬肩高53-58厘米，雌犬51-56厘米，是一种中型犬','1','Uploads/img/2017-12-20/1513740544.jpg','1513740544','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004210s ]
+
+[ 2017-12-20T11:31:06+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0071s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('泰迪犬','1','贵宾犬（Poodle），也称“贵妇犬”，又称“卷毛狗”，在德语中，Pudel是“水花飞溅”的意思，是犬亚科犬属的一种动物','1','Uploads/img/2017-12-20/1513740666.jpg','1513740666','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001241s ]
+
+[ 2017-12-20T11:32:30+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0056s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('萨摩耶','1','大型犬。 外型优美 如果美丽也是一种罪过,那么萨摩耶犬已经十恶不赦。','1','Uploads/img/2017-12-20/1513740750.jpg','1513740750','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2017-12-20T11:34:11+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0049s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('牧羊犬','1','牧羊犬是人们赋予专职放牧类犬的一个总称，不是一个单独品种，“家族庞大，犬丁兴旺”，其中包括“苏格兰牧羊犬”、“喜乐蒂牧羊犬”、“边境牧羊犬”等','1','Uploads/img/2017-12-20/1513740851.png','1513740851','0') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002797s ]
+
+[ 2017-12-20T11:36:21+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0073s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('贵宾犬','1','小型犬。贵宾可是我们最常见的一种狗狗,它体型不大不小,性格机灵活泼,而且非常聪明,对于家庭饲养是在合适不过了','1','Uploads/img/2017-12-20/1513740981.jpg','1513740981','0') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001800s ]
+
+[ 2017-12-20T14:17:09+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004282s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0172s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('宠物鼠','0','各种鼠类大全','1','Uploads/img/2017-12-20/1513750628.jpg','1513750629','0') [ RunTime:0.0142s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000594s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000655s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.054641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.054691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022244s ]
+
+[ 2017-12-20T14:17:51+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0061s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('仓鼠','16','仓鼠体长5-12厘米，身体较为肥圆。除分布在中亚的小仓鼠外，其他种类的仓鼠两颊皆有颊囊，从臼齿侧延伸到肩部，因此得名为仓鼠。仓鼠通常会在筑巢的地方挖洞，喜夜间活动。常常会收集种子并把种子带回洞中或储存洞中。','1','Uploads/img/2017-12-20/1513750671.jpg','1513750671','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001340s ]
+
+[ 2017-12-20T14:20:19+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0054s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('金丝熊','17','金丝熊，英文名Syrian Hamster、Golden Hamster，是仓鼠的一种。主食各种植物种子。','1','Uploads/img/2017-12-20/1513750819.jpg','1513750819','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2017-12-20T14:21:36+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0052s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('布丁鼠','17','布丁鼠是加卡利亚仓鼠的一种，和老公公鼠、黄金鼠等一样都属于仓鼠科，但布丁鼠毛色很纯，有一对乌溜溜的大眼睛，模样可爱。各地均可饲养。','1','Uploads/img/2017-12-20/1513750896.jpg','1513750896','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002617s ]
+
+[ 2017-12-20T14:26:46+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0080s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('西施熊','17','西施熊由黄金仓鼠培育而来的长毛品种，跟纯种长毛熊仔的差距在于全身性长毛跟局部长毛','1','Uploads/img/2017-12-20/1513751206.jpg','1513751206','0') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001359s ]
+
+[ 2017-12-20T14:29:25+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0652s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('秋田犬','1','是日本国犬，在日本是家庭宠物犬。秋田犬是日本最大的狐狸犬种，这一大型狐狸犬就算在欧洲和美国这种狐狸犬种众多的国家也颇为引人瞩目','1','Uploads/img/2017-12-20/1513751365.jpg','1513751365','0') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001469s ]
+
+[ 2017-12-20T14:32:49+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001344s ]
+
+[ 2017-12-20T14:36:09+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001633s ]
+
+[ 2017-12-20T14:36:44+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001608s ]
+
+[ 2017-12-20T14:38:03+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000392s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2017-12-20T14:47:47+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0069s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('爬虫类','0','各种稀奇古怪的爬虫类都在这里。','1','Uploads/img/2017-12-20/1513752467.jpg','1513752467','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2017-12-20T14:49:03+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002251s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0053s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('太攀蛇 ','22','太攀蛇是温柔害羞的爬虫类动物，它一般不会伤害人。太攀蛇虽然有剧毒，但它不会轻易攻击人的，除非你惹怒到它了，它们会在眨眼功夫用毒牙咬受害者数下，攻击速度极快，让你无法提放的。','1','Uploads/img/2017-12-20/1513752543.jpg','1513752543','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2017-12-20T14:50:17+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0062s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('帝皇眼镜蛇王','22','在遇到危险时会喷出毒液，并且毒性非常强，一般在被咬后最快4－6分钟就会导致死亡。帝皇眼镜蛇的毒性是神经毒，没有药物治疗的被咬者必定死亡。','1','Uploads/img/2017-12-20/1513752617.jpg','1513752617','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001499s ]
+
+[ 2017-12-20T15:02:20+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0091s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('金钱龟','22','金钱龟的外观很容易辨认，黄色的头部、棕红色的背部上有着三条黑色的条纹，分布不同的金钱龟外观有一定的区别，主要集中在体型与条纹的分布上，但是整体的外观不变。','1','Uploads/img/2017-12-20/1513753340.jpg','1513753340','0') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001548s ]
+
+[ 2017-12-20T15:03:55+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0069s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('黄头侧颈龟','22','黄头侧颈龟基本上是水栖的。尽管幼龟可以饲养在很小的空间里，但成龟那庞大的体型，使得室内饲养成为一桩难事。这种龟最适合居住在最南部的养龟爱好者们饲养，那儿可以提供常年饲养的户外设施。','1','Uploads/img/2017-12-20/1513753434.jpg','1513753434','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+
+[ 2017-12-20T15:04:46+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0066s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('绿鬣蜥','22','原产于中南美洲墨西哥至巴拉圭等国，它是美国最受欢迎的爬虫宠物之一 ，在美国的的大部分宠物店都可以看到绿鬣蜥。人工饲养的绿鬣蜥寿命长达20年以上。','1','Uploads/img/2017-12-20/1513753486.jpg','1513753486','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2017-12-20T15:06:03+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0069s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('钝尾两头蛇','22','钝尾两头蛇并不是有两个头，而是由于它们的尾部粗钝，尾部的形状、粗细、花纹等都和头部非常相似，不仔细看就会觉得两端都是头的样子。钝尾两头蛇属于无毒蛇类。','1','Uploads/img/2017-12-20/1513753563.jpg','1513753563','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001385s ]
+
+[ 2017-12-20T15:06:59+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0064s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('黑曼巴蛇','22','黑曼巴蛇（Dendroaspis polylepis）体型较大，外观似乎有点吓人，它是世界上移动速度最好的蛇之一。在非洲被称之为“非洲死神”之称。','1','Uploads/img/2017-12-20/1513753619.jpg','1513753619','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+
+[ 2017-12-20T15:23:44+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0065s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('鸟类','0','通常是指智商较高，可以和人进行互动交流的鸟类。与普通的的笼养鸟不同，它们需要的不仅仅是饲料与水，而是与人地位基本平等的地位。','1','Uploads/img/2017-12-20/1513754624.png','1513754624','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003493s ]
+
+[ 2017-12-20T15:26:19+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0071s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('鱼类','0','在家养上几尾淡水游鱼不仅能静心养眼、缓解视觉疲劳，还能美化环境、调节室内空气。','1','Uploads/img/2017-12-20/1513754779.jpg','1513754779','0') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001491s ]
+
+[ 2017-12-20T15:27:46+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0072s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('八哥','30','外形大小和家八哥相似，体长23-28cm。通体黑色，前额有长而竖直的羽簇，有如冠状，翅具白色翅斑，飞翔时尤为明显。尾羽和尾下覆羽具白色端斑。嘴乳黄色，脚黄色。','1','Uploads/img/2017-12-20/1513754866.jpg','1513754866','0') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001383s ]
+
+[ 2017-12-20T15:28:40+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0050s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('虎皮鹦鹉','30','是鹦形目鹦鹉科的鸟类，又名娇凤，属小型攀禽品种，原产于澳大利亚的内陆地区，野生的虎皮鹦鹉栖息于林缘、草地等处。结群活动。以植物种子等为食。繁殖期为6-1月。营巢于树洞中。每窝产卵4-8枚。孵化期为18天。性情活泼且易于驯养，在中国是大众最喜欢的宠物鸟之一。','1','Uploads/img/2017-12-20/1513754920.jpg','1513754920','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2017-12-20T15:29:37+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0054s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('画眉鸟 ','30','是雀形目画眉科的鸟类。全长约23厘米。全身大部棕褐色。头顶至上背具黑褐色的纵纹，眼圈白色并向后延伸成狭窄的眉纹。','1','Uploads/img/2017-12-20/1513754977.jpg','1513754977','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2017-12-20T15:30:50+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0072s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('相思鸟','30','相思鸟（Silver-eared Mesia 学名：Leiothrix）别名红嘴玉、红嘴绿观音、恋鸟，在西方叫“乃丁格”（情鸟）。隶属鹟科、画眉亚科、相思鸟属，栖息于平原及海拔1000米的小丘，活动于常绿阔叶林、灌丛和竹丛间。','1','Uploads/img/2017-12-20/1513755050.jpg','1513755050','0') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2017-12-20T15:32:00+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0058s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('金鱼 ','31','金鱼起源于中国，也称“金鲫鱼”，近似鲤鱼（Cyprinus carpio）但它没有口须，是由鲫鱼进化而成的观赏鱼类','1','Uploads/img/2017-12-20/1513755120.jpg','1513755120','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2017-12-20T15:32:58+08:00 ] ::1 /pet/index.php/Admin/Shop/type.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: [8] Undefined index: ss D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 41 行.
+NOTIC: [8] Undefined index: tid D:\phpStudy\WWW\pet\APPS\Admin\Controller\ShopController.class.php 第 47 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\pet\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0049s ]
+SQL: INSERT INTO `type` (`tname`,`pid`,`describe`,`status`,`img`,`time`,`tnum`) VALUES ('恐龙鱼','31','恐龙鱼是古老鱼类，和龙鱼、肺鱼一样属于活化石大型鱼类。 体格强建，不同种类生长速度不同。饲养不难，小鱼、小虾类的活饵和鱼虫均接受，冰冻南极虾、鱼粒类的食物也可喂食，基本不挑饵食','1','Uploads/img/2017-12-20/1513755178.jpg','1513755178','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2017-12-20T16:18:33+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001656s ]
+
+[ 2017-12-20T16:18:39+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001523s ]
+
+[ 2017-12-20T16:18:43+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001946s ]
+
+[ 2017-12-20T16:18:50+08:00 ] ::1 /pet/index.php/Admin/Shop/save_status
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0076s ]
+SQL: SELECT `goods_status` FROM `goods` WHERE ( id = 7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `goods` SET `goods_status`='0' WHERE ( id = 7 ) [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2017-12-20T16:18:50+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2017-12-20T16:18:53+08:00 ] ::1 /pet/index.php/Admin/Shop/save_status
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0048s ]
+SQL: SELECT `goods_status` FROM `goods` WHERE ( id = 7 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `goods` SET `goods_status`='1' WHERE ( id = 7 ) [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2017-12-20T16:18:53+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2017-12-20T16:21:44+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001301s ]
+
+[ 2017-12-20T16:23:15+08:00 ] ::1 /pet/index.php/Admin/Shop/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `type`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2017-12-20T20:00:58+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2017-12-20T20:01:01+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2017-12-20T20:04:26+08:00 ] ::1 /pet/index.php/Admin/Shop/save_status
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0065s ]
+SQL: SELECT `goods_status` FROM `goods` WHERE ( id = 8 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `goods` SET `goods_status`='0' WHERE ( id = 8 ) [ RunTime:0.1808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003634s ]
+
+[ 2017-12-20T20:04:27+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2017-12-20T20:05:31+08:00 ] ::1 /pet/index.php/Admin/Shop/save_status
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0270s ]
+SQL: SELECT `goods_status` FROM `goods` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `goods` SET `goods_status`='0' WHERE ( id = 9 ) [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2017-12-20T20:05:31+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+
+[ 2017-12-20T20:05:33+08:00 ] ::1 /pet/index.php/Admin/Shop/save_status
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0061s ]
+SQL: SELECT `goods_status` FROM `goods` WHERE ( id = 9 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `goods` SET `goods_status`='1' WHERE ( id = 9 ) [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2017-12-20T20:05:33+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2017-12-20T20:10:22+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001460s ]
+
+[ 2017-12-20T20:10:26+08:00 ] ::1 /pet/index.php/Admin/Shop/goods_del
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0057s ]
+SQL: DELETE FROM `goods` WHERE `id` = 9 [ RunTime:0.0595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002290s ]
+
+[ 2017-12-20T20:10:26+08:00 ] ::1 /pet/index.php/Admin/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `goods` INNER JOIN type on goods.tid = type.tid   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
+

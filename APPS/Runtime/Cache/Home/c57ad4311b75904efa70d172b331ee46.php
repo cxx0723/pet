@@ -51,6 +51,16 @@
 										<li><a href="<?php echo U('Team/index');?>">团队</a></li>
 										<li><a href="<?php echo U('Shop/index');?>">商店</a></li>
 										<li><a href="<?php echo U('Shoper/index');?>">商家</a></li>
+                                        
+                                        <?php if(empty(Cookie('uname'))): ?><li><a href="<?php echo U('Login/index');?>">登录</a></li>
+                                        <?php else: ?><li><a href="<?php echo U('Cart/index');?>">购物车</a></li> 
+                                          <font color="red"><?=Cookie('uname')?></font>
+                                          <a href="<?php echo U('Login/out');?>">退出</a><?php endif; ?>
+
+										
+
+
+										
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</nav>
@@ -68,8 +78,8 @@
 								<div class="row">
 									<div class="col-sm-8 col-xs-12">
 										<div class="">
-											<h1>Talent Team</h1>
-											<p>Pet lovers rely on Becky’s Pet Care for professional dog walking and pet sitting.</p>
+											<h1>优秀的团队</h1>
+											<p>每一个养宠物的人，都与自己的爱宠之间，有着不为人知的故事。或风轻云淡，或刻骨铭心。您与宠物之间的关系，也可能有着千丝万缕的不同。或玩伴，或至交，或生活的依靠。亦或许，它可能只是你生命中的一个匆匆过客。但是，你却是它生命中的全部。</p>
 										</div>
 									</div>
 									<div class="col-sm-4 col-xs-12">
@@ -100,9 +110,9 @@
 			<section class="our-team-section">
 				<div class="container">
 					<div class="inner-title-one">
-						<h2>Your pet is in good hands with a team of professional</h2>
+						<h2>你的宠物需要一个专业的团队</h2>
 						<span></span>
-						<p>In a professional context it often happens that private or corporate clients order a publication to be made and presented with the actual content still not being ready.</p>
+						<p>在宠物的医疗和保健这个领域里，我们的专业性已经受到客户的广泛好评</p>
 					</div>
 					<div class="row">
 						<div class="col-md-4 col-xs-6 team-item-width">

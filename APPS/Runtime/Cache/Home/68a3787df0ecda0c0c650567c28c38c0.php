@@ -51,6 +51,16 @@
 										<li><a href="<?php echo U('Team/index');?>">团队</a></li>
 										<li><a href="<?php echo U('Shop/index');?>">商店</a></li>
 										<li><a href="<?php echo U('Shoper/index');?>">商家</a></li>
+                                        
+                                        <?php if(empty(Cookie('uname'))): ?><li><a href="<?php echo U('Login/index');?>">登录</a></li>
+                                        <?php else: ?><li><a href="<?php echo U('Cart/index');?>">购物车</a></li> 
+                                          <font color="red"><?=Cookie('uname')?></font>
+                                          <a href="<?php echo U('Login/out');?>">退出</a><?php endif; ?>
+
+										
+
+
+										
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</nav>
@@ -60,6 +70,16 @@
 </section>
 
 
+<style type="text/css">
+
+    .zhong{
+    	margin-left: 170px;
+    }
+	.dao{
+		margin-left: 20px;
+
+	}
+</style>
 <section class="">
 				<div class="them-inner-banner">
 					<div class="inner-banner-opact">
@@ -68,8 +88,8 @@
 								<div class="row">
 									<div class="col-sm-8 col-xs-12">
 										<div class="">
-											<h1>Gallery</h1>
-											<p>Pet lovers rely on Becky’s Pet Care for professional dog walking and pet sitting.</p>
+											<h1>宠物</h1>
+											<p>宠物与你，一端简单而又复杂的关系。无论什么原因，它来到你的身边，陪伴着你风雨无阻。</p>
 										</div>
 									</div>
 									<div class="col-sm-4 col-xs-12">
@@ -90,124 +110,32 @@
 							<li><span>-</span></li>
 							<li><a href="index.html">Page</a></li>
 							<li><span>-</span></li>
-							<li><a href="#">Gallery</a></li>
+							<li><a href="javascript::"><?=$shou?></a></li>
 						</ul>
 					</div>
 				</div>
-			</section>
 
+			</section>
+			<span class="zhong">宠物种类</span>
+			  <?php if(is_array($dao)): $i = 0; $__LIST__ = $dao;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Pet/index',['tid'=>$v['tid']]);?>" class="dao"><?php echo ($v["tname"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
 			<!-- Gallery v-1 ____________________________ -->
 			<section class="gallery-v-one">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-xs-6 gallery-item-width">
+						<?php if(is_array($type)): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><div class="col-md-4 col-xs-6 gallery-item-width">
 							<div class="gallery-tiem-wrapper">
-								<img src="/pet/Public/images/gallery/img-1.jpg" alt="image">
+								<img src="/pet/<?php echo ($v["img"]); ?>" alt="image" width="200px" height="300px">
 								<div class="gallery-item-opact">
-									<h5>PET ADOPTION</h5>
+									<h5><?php echo ($v["tname"]); ?></h5>
 									<div>
-										<a href="/pet/Public/images/gallery/img-1.jpg" class="fancybox"><i class="flaticon-search"></i></a>
-										<a href="/pet/Public/images/gallery/img-1.jpg" class="fancybox"><i class="flaticon-unlink"></i></a>
+										<a href="/pet/<?php echo ($v["img"]); ?>" class="fancybox"><i class="flaticon-search"></i></a>
+										<a href="/pet/<?php echo ($v["img"]); ?>" class="fancybox"><i class="flaticon-unlink"></i></a>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-4 col-xs-6 gallery-item-width">
-							<div class="gallery-tiem-wrapper">
-								<img src="/pet/Public/images/gallery/img-2.jpg" alt="image">
-								<div class="gallery-item-opact">
-									<h5>PET ADOPTION</h5>
-									<div>
-										<a href="/pet/Public/images/gallery/img-2.jpg" class="fancybox"><i class="flaticon-search"></i></a>
-										<a href="/pet/Public/images/gallery/img-2.jpg" class="fancybox"><i class="flaticon-unlink"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-6 gallery-item-width">
-							<div class="gallery-tiem-wrapper">
-								<img src="/pet/Public/images/gallery/img-3.jpg" alt="image">
-								<div class="gallery-item-opact">
-									<h5>PET ADOPTION</h5>
-									<div>
-										<a href="/pet/Public/images/gallery/img-3.jpg" class="fancybox"><i class="flaticon-search"></i></a>
-										<a href="/pet/Public/images/gallery/img-3.jpg" class="fancybox"><i class="flaticon-unlink"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-6 gallery-item-width">
-							<div class="gallery-tiem-wrapper">
-								<img src="/pet/Public/images/gallery/img-4.jpg" alt="image">
-								<div class="gallery-item-opact">
-									<h5>PET ADOPTION</h5>
-									<div>
-										<a href="/pet/Public/images/gallery/img-4.jpg" class="fancybox"><i class="flaticon-search"></i></a>
-										<a href="/pet/Public/images/gallery/img-4.jpg" class="fancybox"><i class="flaticon-unlink"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-6 gallery-item-width">
-							<div class="gallery-tiem-wrapper">
-								<img src="/pet/Public/images/gallery/img-5.jpg" alt="image">
-								<div class="gallery-item-opact">
-									<h5>PET ADOPTION</h5>
-									<div>
-										<a href="/pet/Public/images/gallery/img-5.jpg" class="fancybox"><i class="flaticon-search"></i></a>
-										<a href="/pet/Public/images/gallery/img-5.jpg" class="fancybox"><i class="flaticon-unlink"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-6 gallery-item-width">
-							<div class="gallery-tiem-wrapper">
-								<img src="/pet/Public/images/gallery/img-6.jpg" alt="image">
-								<div class="gallery-item-opact">
-									<h5>PET ADOPTION</h5>
-									<div>
-										<a href="/pet/Public/images/gallery/img-6.jpg" class="fancybox"><i class="flaticon-search"></i></a>
-										<a href="/pet/Public/images/gallery/img-6.jpg" class="fancybox"><i class="flaticon-unlink"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-6 gallery-item-width">
-							<div class="gallery-tiem-wrapper">
-								<img src="/pet/Public/images/gallery/img-7.jpg" alt="image">
-								<div class="gallery-item-opact">
-									<h5>PET ADOPTION</h5>
-									<div>
-										<a href="/pet/Public/images/gallery/img-7.jpg" class="fancybox"><i class="flaticon-search"></i></a>
-										<a href="/pet/Public/images/gallery/img-7.jpg" class="fancybox"><i class="flaticon-unlink"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-6 gallery-item-width">
-							<div class="gallery-tiem-wrapper">
-								<img src="/pet/Public/images/gallery/img-9.jpg" alt="image">
-								<div class="gallery-item-opact">
-									<h5>PET ADOPTION</h5>
-									<div>
-										<a href="/pet/Public/images/gallery/img-9.jpg" class="fancybox"><i class="flaticon-search"></i></a>
-										<a href="/pet/Public/images/gallery/img-9.jpg" class="fancybox"><i class="flaticon-unlink"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-12 gallery-item-width">
-							<div class="gallery-tiem-wrapper">
-								<img src="/pet/Public/images/gallery/img-8.jpg" alt="image">
-								<div class="gallery-item-opact">
-									<h5>PET ADOPTION</h5>
-									<div>
-										<a href="/pet/Public/images/gallery/img-8.jpg" class="fancybox"><i class="flaticon-search"></i></a>
-										<a href="/pet/Public/images/gallery/img-8.jpg" class="fancybox"><i class="flaticon-unlink"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
+						</div><?php endforeach; endif; else: echo "" ;endif; ?>
+						
+						
 					</div>
 					<ul class="gallery-button-wrapper">
 						<li><a href="#">1</a></li>

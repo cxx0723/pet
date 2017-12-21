@@ -1,0 +1,210 @@
+
+<div class=" admin-content">
+	
+		<div class="daohang">
+			<ul>
+				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs"> 首页 </li>
+				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs">帮助中心<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a></button></li>
+				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs">奖金管理<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a></button></li>
+				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs">产品管理<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a></button></li>
+				
+				
+			</ul>
+
+       
+
+	
+</div>
+
+<div class="admin-biaogelist">
+	
+    <div class="listbiaoti am-cf">
+      <ul class="am-icon-flag on"> 栏目名称</ul>
+      
+      <dl class="am-icon-home" style="float: right;"> 当前位置： 首页 > <a href="#">商品列表</a></dl>
+      
+      <dl>
+       <a href="{:U('Shop/add')}"><button type="button" class="am-btn am-btn-danger am-round am-btn-xs am-icon-plus"> 添加产品</button></a> 
+      </dl>
+      
+      
+    </div>
+	
+	<div class="am-btn-toolbars am-btn-toolbar am-kg am-cf">
+  <ul>
+    <li>
+      <div class="am-btn-group am-btn-group-xs">
+        <select data-am-selected="{btnWidth: 90, btnSize: 'sm', btnStyle: 'default'}">
+          <option value="b">产品分类</option>
+          <option value="o">下架</option>
+        </select>
+      </div>
+    </li>
+    <li>
+      <div class="am-btn-group am-btn-group-xs">
+      <select data-am-selected="{btnWidth: 90, btnSize: 'sm', btnStyle: 'default'}">
+        <option value="b">产品分类</option>
+        <option value="o">下架</option>
+      </select>
+      </div>
+    </li>
+    <li style="margin-right: 0;">
+    	<span class="tubiao am-icon-calendar"></span>
+      <input type="text" class="am-form-field am-input-sm am-input-zm  am-icon-calendar" placeholder="开始日期" data-am-datepicker="{theme: 'success',}"  readonly/>
+    </li>
+       <li style="margin-left: -4px;">
+    	<span class="tubiao am-icon-calendar"></span>
+      <input type="text" class="am-form-field am-input-sm am-input-zm  am-icon-calendar" placeholder="开始日期" data-am-datepicker="{theme: 'success',}"  readonly/>
+    </li>
+    
+        <li style="margin-left: -10px;">
+      <div class="am-btn-group am-btn-group-xs">
+      <select data-am-selected="{btnWidth: 90, btnSize: 'sm', btnStyle: 'default'}">
+        <option value="b">产品分类</option>
+        <option value="o">下架</option>
+      </select>
+      </div>
+    </li>
+    <li><input type="text" class="am-form-field am-input-sm am-input-xm" placeholder="关键词搜索" /></li>
+    <li><button type="button" class="am-btn am-radius am-btn-xs am-btn-success" style="margin-top: -1px;">搜索</button></li>
+  </ul>
+</div>
+
+
+    <form class="am-form am-g">
+          <table width="100%" class="am-table am-table-bordered am-table-radius am-table-striped">
+            <thead>
+              <tr class="am-success">
+                <th class="table-check"><input type="checkbox" /></th>
+                <th class="table-id">排序</th>
+                <th class="table-id">ID</th>
+                <th class="table-title">标题</th>
+                <th class="table-type">类别</th>
+                <th class="table-author am-hide-sm-only">上架/下架</th>
+                <th class="table-date am-hide-sm-only">添加日期</th>
+                <th width="163px" class="table-set">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <volist name='goods' id="v">
+              <tr gid="{$v.id}">
+                <td><input type="checkbox" /></td>
+                <td><input type="text" value="{$v.sort}" id="sort" class="am-form-field am-radius am-input-sm"/></td>
+                <td>{$v.id}</td>
+                <td><a href="#">{$v.name}</a></td>
+                <td>{$v.tname}</td>
+                <td class="am-hide-sm-only">
+
+                  <if condition="$v.goods_status eq 0">
+                     <i class="am-icon-close am-text-primary"></i>
+                  <else />
+                    <i class="am-icon-check am-text-warning"></i>
+                  </if>
+
+                </td>
+                <td class="am-hide-sm-only"><?=date('Y-m-d H:i:s',$v['time'])?></td>
+                <td><div class="am-btn-toolbar">
+                    <div class="am-btn-group am-btn-group-xs">
+                      <button class="am-btn am-btn-default am-btn-xs am-text-success am-round"><span class="am-icon-search"></span> </button>
+                      <span class="am-btn am-btn-default am-btn-xs am-text-secondary am-round" title="审核" id="shen"><span class="am-icon-pencil-square-o"></span></span>
+
+                      <button class="am-btn am-btn-default am-btn-xs am-text-warning  am-round"><span class="am-icon-copy"></span></button>
+                      <span id="del" class="am-btn am-btn-default am-btn-xs am-text-danger am-round" title="删除"><span class="am-icon-trash-o"></span></span>
+                    </div>
+                  </div></td>
+              </tr>
+            </volist>
+            </tbody>
+          </table>
+          
+                 <div class="am-btn-group am-btn-group-xs">
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span> 删除</button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 上架</button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 下架</button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 移动</button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span> 新增</button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-save"></span> 保存</button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-archive"></span> 移动</button>
+              <button type="button" class="am-btn am-btn-default"><span class="am-icon-trash-o"></span> 删除</button>
+            </div>
+          
+          <ul class="am-pagination am-fr">
+                <li class="am-disabled"><a href="#">«</a></li>
+                <li class="am-active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+               
+                <li><a href="#">»</a></li>
+              </ul>
+          
+          <hr />
+          <p>注：点击审核修改商品上下架状态</p>
+        </form>
+ 
+ 
+</div>
+
+</div>
+
+</div>
+
+<script src="__PUBLIC__/assets/js/amazeui.min.js"></script>
+<script type="text/javascript">
+     $(document).on('click','#shen',function(){
+        var gid = $(this).parents('tr').attr('gid');
+         $.ajax({
+           type : "post",
+           url  : "__URL__/save_status",
+           data : "gid="+gid,
+           success:function(e){
+              load();
+           }
+        })
+        
+   
+     })
+
+     $(document).on('click','#del',function(){
+        var gid = $(this).parents('tr').attr('gid');
+         $.ajax({
+           type : "post",
+           url  : "__URL__/goods_del",
+           data : "gid="+gid,
+           success:function(e){
+              load();
+           }
+        })
+        
+   
+     })
+
+     function load(){
+        window.location.reload();
+     }
+
+     $(document).on('blur','#sort',function(){
+
+        var num = $(this).val();
+        if (isNaN(num)) {
+　　　　    alert("请输入数字");
+　　　　   frm.num.focus();
+
+　　　　    return false;
+　　     } 
+        if(num == "")
+        {
+          num =0;
+        }
+        var gid = $(this).parents('tr').attr('gid');
+        $.ajax({
+           type : "post",
+           url  : "__URL__/save_sort",
+           data : "gid="+gid+"&num="+num,
+           success:function(e){
+              
+           }
+        })
+     })
+</script>
+
+</body>
+</html>

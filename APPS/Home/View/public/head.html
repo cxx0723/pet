@@ -51,6 +51,18 @@
 										<li><a href="{:U('Team/index')}">团队</a></li>
 										<li><a href="{:U('Shop/index')}">商店</a></li>
 										<li><a href="{:U('Shoper/index')}">商家</a></li>
+                                        
+                                        <if condition="empty(Cookie('uname'))">
+                                           <li><a href="{:U('Login/index')}">登录</a></li>
+                                        <else /><li><a href="{:U('Cart/index')}">购物车</a></li> 
+                                          <font color="red"><?=Cookie('uname')?></font>
+                                          <a href="{:U('Login/out')}">退出</a>
+                                       </if>
+
+										
+
+
+										
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</nav>

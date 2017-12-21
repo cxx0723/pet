@@ -1,0 +1,178 @@
+<style type="text/css">
+   .fa{
+      cursor: pointer;
+   }
+</style>
+<link rel="stylesheet" href="__PUBLIC__/assetss/css/bootstrap.min.css" type="text/css">
+   <!-- Dropdownhover CSS -->
+   <link rel="stylesheet" href="__PUBLIC__/assetss/css/bootstrap-dropdownhover.min.css" type="text/css">
+   <!-- latest fonts awesome -->
+   <link rel="stylesheet" href="__PUBLIC__/assetss/font/css/font-awesome.min.css" type="text/css">
+   <!-- simple line fonts awesome -->
+   <link rel="stylesheet" href="__PUBLIC__/assetss/simple-line-icon/css/simple-line-icons.css" type="text/css">
+   <!-- stroke-gap-icons -->
+   <link rel="stylesheet" href="__PUBLIC__/assetss/stroke-gap-icons/stroke-gap-icons.css" type="text/css">
+   <!-- Animate CSS -->
+   <link rel="stylesheet" href="__PUBLIC__/assetss/css/animate.min.css" type="text/css">
+   <!-- Style CSS -->
+   <link rel="stylesheet" href="__PUBLIC__/assetss/css/style.css" type="text/css">
+   <!-- Style CSS -->
+   <link rel="stylesheet" href="__PUBLIC__/assetss/css/slider.css" type="text/css">
+   <!--  baguetteBox -->
+   <link rel="stylesheet" href="__PUBLIC__/assetss/css/baguetteBox.css">
+   <!-- Owl Carousel Assets -->
+   <link href="__PUBLIC__/assetss/owl-carousel/owl.carousel.css" rel="stylesheet">
+   <link href="__PUBLIC__/assetss/owl-carousel/owl.theme.css" rel="stylesheet">
+<section class="shopping-cart">
+            <!-- .shopping-cart -->
+            <div class="container">
+				<div class="row">
+				
+				<div class="col-md-12">
+                  <h2>You cart items</h2>
+                  <table>
+                     <tr>
+                        <th>商品图片</th>
+                        <th>产品名称</th>
+                        <th>描述</th>
+                        <th>价钱</th>
+                        <th>数量</th>
+                        <th>总价格</th>
+                        <th></th>
+                     </tr>
+                   <volist name="cart" id="v">
+                     <tr gid="{$v.cid}">
+                        <td><img src="__ROOT__/uploads/{$v.img}" alt="13"></td>
+                        <td>{$v.gname}</td>
+                        <td>{$v.describe}</td>
+                        <td><strong>￥{$v.price}</strong></td>
+                        <td><input type="number" name="quantity" id="num" min="1" max="500" value="{$v.gnum}"></td>
+                        <td><strong>￥<?=$v['gnum']*$v['price']?></strong></td>
+                        <td><span class="red"><i class="fa fa-times" aria-hidden="true"></i></span></td>
+                     </tr>
+                    </volist>
+                  </table>
+                  <div class="col-sm-6 col-md-6">
+                     <a href="#" class="button red">继续购物</a>
+                  </div>
+                  <div class="col-sm-6 col-md-6 text-right">
+                     <a href="#" class="button">更新购物车</a>
+                     <a href="#" class="button">清空购物车</a>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                     <div class="shipping-outer">
+                        <h2>运费</h2>
+                        <div class="row">
+                           <div class="col-md-12 counttry">
+                              <div class="lable">收货人姓名:</div>
+                              <input name="counttry" type="text">
+                           </div>
+                           <div class="col-sm-6 col-md-6">
+                              <div class="lable">选择你的收货地址:</div>
+                              <div class="size State">
+                                 <div class="select-option">
+                                   <select id="s_province" name="s_province"></select>  
+
+                                   <select id="s_city" name="s_city" ></select>  
+
+                                    <select id="s_county" name="s_county"></select>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- <div class="col-sm-6 col-md-6">
+                              <div class="lable">邮政编码:</div>
+                              <input name="counttry" placeholder="Zip Code" type="text">
+                           </div> -->
+                        </div>
+                        <a href="#" class="button2">更新送货</a>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                     <div class="shipping-outer">
+                        <h2>优惠券</h2>
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="lable">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                              <input name="counttry" type="text">
+                           </div>
+                           <div class="col-md-12">
+                              <div class="lable">Coupon Code:</div>
+                              <input name="Coupon Code" placeholder="Coupon Code" type="text">
+                           </div>
+                        </div>
+                        <a href="#" class="button2">REdeem code</a>        		
+                     </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                     <div class="shipping-outer">
+                        <h2>购物车总数</h2>
+                        <ul>
+                           <li>购物车小计: <strong>￥640.00</strong></li>
+                           <li>运费: <strong>￥10.00</strong></li>
+                           <li>总额: <strong>￥650.00</strong></li>
+                           <li class="text-center">
+                              <a href="#" class="redbutton">支付</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+				</div>
+               
+            </div>
+            <!-- /.shopping-cart -->
+         </section>
+    <script class="resources library" src="__PUBLIC__/js/area.js" type="text/javascript"></script>
+   <script type="text/javascript">_init_area();</script>
+   <script src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+   <!-- Bootstrap Core JavaScript -->
+   <script src="__PUBLIC__/assetss/js/bootstrap-dropdownhover.min.js"></script>
+   <!-- Plugin JavaScript -->
+   <script src="__PUBLIC__/assetss/js/jquery.easing.min.js"></script>
+   <script src="__PUBLIC__/assetss/js/wow.min.js"></script>
+   <!-- owl carousel -->
+   <script src="__PUBLIC__/assetss/owl-carousel/owl.carousel.js"></script>
+   <!--  Custom Theme JavaScript  -->
+   <script type="text/javascript">
+    
+var Gid  = document.getElementById ;
+
+var showArea = function(){
+
+   Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +    
+
+   Gid('s_city').value + " - 县/区" + 
+
+   Gid('s_county').value + "</h3>"
+
+                     }
+
+Gid('s_county').setAttribute('onchange','showArea()');
+  
+   
+</script>
+<script type="text/javascript">
+   $(document).on('change','#num',function(){
+      var num=$(this).val();
+      var p = $(this).parent().prev().text();
+      var m =p.substring(1);
+      var money = m*num;
+      $(this).parent().next().text("￥"+money)
+
+   })
+
+   $(document).on('click','.fa',function(){
+      _this=$(this);
+       var gid=$(this).parents('tr').attr('gid');
+       if(window.confirm('你确定要删除这件商品吗？')){
+          $.ajax({
+            type :"post",
+            url  :"__URL__/del",
+            data :"gid="+gid,
+            success:function(){
+               _this.parents('tr').remove();
+            }
+          })
+       }
+   })
+</script>
